@@ -2,8 +2,8 @@ import shutil
 from fastapi import FastAPI, File, Form, UploadFile, Depends, Response
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
-from database import engine, get_db
-from models import Base, Resume
+from backend.database import engine, get_db
+from backend.models import Base, Resume
 import os
 from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
